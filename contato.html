@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+    <title>Contato</title>
+</head>
+
+<body>  
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="logo Empresa" />
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Página Inicial</a>
+                        </li>
+                        <li>
+                            <a href="cardapio.html">Produtos</a>
+                        </li>
+                        <li>
+                            <a href="encomenda.html">Faça a sua Encomenda</a>
+                        </li>
+                        <li>
+                            <a href="sobre.html">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="contato.html">Contato</a>
+                            </strong>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="busca">
+                    <select id="select-state" placeholder="Pesquisa...">
+                        <option value="">Pesquisa...</option>
+                        <option value="imgBoloCastanha">Bolo de Castanha</option>
+                        <option value="imgBoloNozes">Bolo de Nozes</option>
+                        <option value="imgBoloMorango">Bolo de Morango</option>
+                        <option value="imgBoloMorangoChocolate">Bolo de morango com chocolate</option>
+                        <option value="imgBoloMorangoDoceLeite">Bolo de morango com doce de leite</option>
+                        <option value="imgTortaChocolate">Torta de Chocolate</option>
+                    </select>
+                </div>
+
+            </div>
+        </main>
+    </header>
+
+    <div class="col-100 bloco-imagens-texto  bloco-texto">
+        <div class="content texto-destaque">
+            <h1>Contato</h1>
+        </div>
+
+        <div class="contato-text conteudo">
+            <h2 class="ctt-1"> Onde Estamos: </h2>
+            <p>Atualmente atendemos na região de Campinas. <br>
+                Fazemos entregas nas cidades: Sumaré, Valinhos, <br>
+                Vinhedo, Mogi Mirim, São Paulo. <br>
+                Também é possível buscar os produtos em nossa <br>
+                residência.</p>
+            <br><br><br><br>
+
+            <h2 class="ctt-2">Canais de atendimento:</h2>
+            <p>Entre em contato conosco via <a href="#">Whatsapp</a> e <a href="https://www.instagram.com/bia_eiras_sweets_cake/">Instagram</a></p>
+
+        </div>
+        <div class="contato-map conteudo">
+            <div id="map"> </div>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <div class="col-100 footer">
+            <div class="content">
+                <div class="col-4">
+                    <img class="logo-footer" src="./img/logo.png" alt="Logo Empresa" />
+                    <p>Feito com amor tem mais sabor</p>
+
+                    <div class="link-rod">
+                        <p>
+                            <a href="">
+                                <img src="./img/whats.png" alt="logo ícone Whatsapp" /></a>
+                            <a href="https://www.instagram.com/bia_eiras_sweets_cake/">
+                                <img src="./img/insta.png" alt="Logo ícone Instagram" /></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3><b>Página Inicial</b></h3>
+                    <p><a href="cardapio.html">Produtos</a></p>
+                    <p><a href="encomenda.html">Faça sua encomenda</a></p>
+                    <p><a href="sobre.html">Sobre Nós</a></p>
+                    <p><a href="contato.html">Contato</a></p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Produtos</b></h3>
+                    <p><a href="cardapio.html">Bolos</a></p>
+                    <p><a href="cardapio.html">Doces</a></p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Encomendas</b></h3>
+                    <p><a href="encomenda.html">Formulário</a></p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Sobre nós</b></h3>
+                    <p><a href="sobre.html">Missão, Visão e Valores</a></p>
+                    <p><a href="sobre.html">História</a></p>
+                    <p><a href="cardapio.html">Nossos Produtos</a></p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Contato</b></h3>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Whatsapp</a></p>
+                    <p><a href="contato.html">Mapa interativo</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="col-100 footer-2">
+        <div class="content">
+            <p>
+                © 2021 Bia Eiras. Todos os direitos reservados. | Política de Privacidade
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+<script type="text/javascript">
+    var mymap = L.map('map').setView([-22.90900537, -47.0623309], 13);
+    var marker = L.marker([-22.90900537, -47.0623309]).addTo(mymap);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoiY2Fpb2FtIiwiYSI6ImNrdnNsOGNiOTJpcTYyd3VwcDdlODR4OXcifQ.JB1nn7VSLnv5yxOn9IcTWw'
+    }).addTo(mymap);
+</script>
+
+</html>

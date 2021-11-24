@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+    <title>Produtos</title>
+</head>
+
+<body>
+
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="logo Empresa" />
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Página Inicial</a>
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="cardapio.html">Produtos</a>
+                            </strong>
+                        </li>
+                        <li>
+                            <a href="encomenda.html">Faça a sua Encomenda</a>
+                        </li>
+                        <li>
+                            <a href="sobre.html">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="busca">
+                    <select id="select-state" placeholder="Pesquisa...">
+                        <option value="">Pesquisa...</option>
+                        <option value="imgBoloCastanha">Bolo de Castanha</option>
+                        <option value="imgBoloNozes">Bolo de Nozes</option>
+                        <option value="imgBoloMorango">Bolo de Morango</option>
+                        <option value="imgBoloMorangoChocolate">Bolo de morango com chocolate</option>
+                        <option value="imgBoloMorangoDoceLeite">Bolo de morango com doce de leite</option>
+                        <option value="imgTortaChocolate">Torta de Chocolate</option>
+                    </select>
+                </div>
+
+            </div>
+        </main>
+    </header>
+
+    <div class="col-100 bloco-imagens-texto">
+
+        <div class="slider-principal" style="margin-top: 20px; margin-bottom:20px; margin-left: 50px;">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/banner.jpg" alt="Foto 1"></div>
+                    <div class="swiper-slide"><img src="./img/banner2.jpg" alt="Foto 2"></div>
+                    <div class="swiper-slide"><img src="./img/banner3.jpg" alt="Foto 3"></div>
+                    <div class="swiper-slide"><img src="./img/banner4.jpg" alt="Foto 3"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        
+        <div class="content conatiner" style="margin-left: 14%; float: left;">
+            <div class="col-3 bloco-texto-cardapio bloco-imagem inner">
+                <a href="./img/imagem1.jpg" class="glightbox2">
+                    <img id="imgBoloMorangoDoceLeite" src="./img/imagem1.jpg" alt="image" />
+                </a>
+                <p><b>R$ 40,00</b></p>
+                <p>Bolo de morango com doce de leite.
+                </p>
+                <button class="btn-cardapio" type="submit" href="#">Encomendar</button>
+            </div>
+
+            <div class="col-3 bloco-texto-cardapio bloco-imagem inner">
+                <a href="./img/imagem2.jpg" class="glightbox2">
+                    <img id="imgTortaChocolate" src="./img/imagem2.jpg" alt="image" />
+                </a>
+                <p><b>R$ 35,00</b></p>
+                <p>Torta de chocolate.
+                </p>
+                <button class="btn-cardapio" type="submit" href="#">Encomendar</button>
+            </div>
+
+            <div class="col-3 bloco-texto-cardapio bloco-imagem">
+                <a href="./img/imagem3.jpg" class="glightbox2">
+                    <img id="imgBoloMorango" src="./img/imagem3.jpg" alt="image" />
+                </a>
+                <p><b>R$ 30,00</b></p>
+                <p>Bolo de morango.
+                </p>
+                <button class="btn-cardapio" type="submit" href="#">Encomendar</button>
+            </div>
+        </div>
+        <div class="content" style="margin-left: 14%; float: left;">
+            <div class="col-3 bloco-texto-cardapio bloco-imagem">
+                <a href="./img/imagem4.jpeg" class="glightbox2">
+                    <img id="imgBoloMorangoChocolate" src="./img/imagem4.jpeg" alt="image" />
+                </a>
+                <p><b>R$ 30,00</b></p>
+                <p>Bolo de morango com chocolate.
+                </p>
+                <button class="btn-cardapio" type="submit" href="#">Encomendar</button>
+            </div>
+
+            <div class="col-3 bloco-texto-cardapio bloco-imagem">
+                <a href="./img/imagem5.jpg" class="glightbox2">
+                    <img id="imgBoloCastanha" src="./img/imagem5.jpg" alt="image" />
+                </a>
+                <p><b>R$ 35,00</b></p>
+                <p>Bolo de castanha.
+                </p>
+                <button class="btn-cardapio" type="submit" href="#">Encomendar</button>
+            </div>
+            <div class="col-3 bloco-texto-cardapio bloco-imagem">
+                <a href="./img/imagem6.jpg" class="glightbox2">
+                    <img id="imgBoloNozes" src="./img/imagem6.jpg" alt="image" />
+                </a>
+                <p><b>R$ 30,00</b></p>
+                <p>Bolo de Nozes.
+                </p>
+                <button class="btn-cardapio" type="submit" href="#">Encomendar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="col-100 footer">
+            <div class="content">
+                <div class="col-4">
+                    <img class="logo-footer" src="./img/logo.png" alt="Logo Empresa" />
+                    <p>Feito com amor tem mais sabor</p>
+
+                    <div class="link-rod">
+                        <p>
+                            <a href="">
+                                <img src="./img/whats.png" alt="logo ícone Whatsapp" /></a>
+                            <a href="https://www.instagram.com/bia_eiras_sweets_cake/">
+                                <img src="./img/insta.png" alt="Logo ícone Instagram" /></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3><b>Página Inicial</b></h3>
+                    <p><a href="cardapio.html">Produtos</a></p>
+                    <p><a href="encomenda.html">Faça sua encomenda</a></p>
+                    <p><a href="sobre.html">Sobre Nós</a></p>
+                    <p><a href="contato.html">Contato</a></p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Produtos</b></h3>
+                    <p><a href="cardapio.html">Bolos</a></p>
+                    <p><a href="cardapio.html">Doces</a></p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Encomendas</b></h3>
+                    <p><a href="encomenda.html">Formulário</a></p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Sobre nós</b></h3>
+                    <p><a href="sobre.html">Missão, Visão e Valores</a></p>
+                    <p><a href="sobre.html">História</a></p>
+                    <p><a href="cardapio.html">Nossos Produtos</a></p>
+                </div>
+                <div class="col-4">
+                    <h3><b>Contato</b></h3>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Whatsapp</a></p>
+                    <p><a href="contato.html">Mapa interativo</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="col-100 footer-2">
+        <div class="content">
+
+            <p>
+                © 2021 Bia Eiras. Todos os direitos reservados. | Política de Privacidade
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+
+    var lightboxDescription = GLightbox({
+        selector: '.glightbox2',
+    });
+
+    function GetUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
+            }
+        }
+    }
+
+    $(document).ready(function() {
+        if (window.location.search.substring(1) != "") {
+            var pesquisa = GetUrlParameter('Pesquisar')
+
+            if (pesquisa != 'undefined')
+                $('img#' + pesquisa).click();
+
+            window.history.replaceState(null, null, window.location.pathname);
+        }
+    });
+</script>
+
+</html>
